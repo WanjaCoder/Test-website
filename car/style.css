@@ -1,0 +1,274 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #111;
+    color: #fff;
+  }
+  
+  header {
+    background-color: #000;
+    padding: 20px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  header h1 {
+    color: #ff2d55;
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  nav {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  
+  nav a {
+    margin: 5px 10px;
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+    font-size: 16px;
+  }
+  
+  nav a:hover {
+    color: #ff2d55;
+  }
+  
+  section {
+    padding: 40px 20px;
+    text-align: center;
+    margin-top: 100px;
+    margin-bottom: 40px;
+  }
+  
+  h2 {
+    color: #ff2d55;
+    font-size: 28px;
+  }
+  
+  .models {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .model {
+    background-color: #1c1c1c;
+    border-radius: 12px;
+    padding: 10px;
+    width: 260px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .model:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 20px rgba(255, 45, 85, 0.3);
+  }
+  
+  .model img {
+    width: 100%;
+    border-radius: 8px;
+  }
+  
+  .model h3 {
+    margin: 10px 0;
+    color: #ff2d55;
+    font-size: 20px;
+  }
+  
+  .btn {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 8px 16px;
+    color: #fff;
+    background-color: #ff2d55;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: background 0.3s ease;
+    font-size: 16px;
+  }
+  
+  .btn:hover {
+    background-color: #e0244d;
+  }
+  
+  footer {
+    background-color: #000;
+    padding: 20px;
+    text-align: center;
+    font-size: 14px;
+  }
+  
+  footer a {
+    color: #ff2d55;
+    text-decoration: none;
+  }
+
+  .test {
+    color: gray;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 10px;
+    }
+  
+  
+  /* Стили для номера телефона и email */
+  .contact-link {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  .contact-link:hover {
+    text-decoration: underline;
+  }
+  
+  /* Стили для неоновой рамки */
+  .highlightable {
+    position: relative;
+    transition: box-shadow 0.3s ease;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 20px; /* Дополнительный отступ сверху */
+  }
+  
+  .highlightable.active {
+    box-shadow: 0 0 20px #ff2d55, 0 0 40px #ff2d55;
+    border-radius: 12px;
+  }
+  
+  /* Дополнительный отступ для секции #models */
+  #models {
+    margin-top: 140px; /* Увеличен отступ, чтобы шапка не перекрывала рамку */
+  }
+  
+  /* Дополнительный отступ для последней секции */
+  #contact {
+    margin-bottom: 60px;
+  }
+  
+  /* Медиа-запросы для адаптивности */
+  @media (max-width: 768px) {
+    header {
+      padding: 15px;
+    }
+  
+    header h1 {
+      font-size: 20px;
+      margin-bottom: 8px;
+    }
+  
+    nav a {
+      margin: 5px;
+      font-size: 14px;
+    }
+  
+    section {
+      padding: 30px 15px;
+      margin-top: 110px;
+      margin-bottom: 30px;
+    }
+  
+    h2 {
+      font-size: 24px;
+    }
+  
+    .model {
+      width: 100%;
+      max-width: 300px;
+    }
+  
+    .model h3 {
+      font-size: 18px;
+    }
+  
+    .btn {
+      font-size: 14px;
+      padding: 6px 12px;
+    }
+  
+    footer {
+      font-size: 12px;
+      padding: 15px;
+    }
+  
+    .highlightable {
+      margin-left: 5px;
+      margin-right: 5px;
+      margin-top: 15px;
+    }
+  
+    #models {
+      margin-top: 150px; /* Увеличен отступ для планшетов */
+    }
+  
+    #contact {
+      margin-bottom: 50px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    header {
+      padding: 10px;
+    }
+  
+    header h1 {
+      font-size: 18px;
+      margin-bottom: 6px;
+    }
+  
+    nav a {
+      font-size: 12px;
+      margin: 3px;
+    }
+  
+    section {
+      padding: 20px 10px;
+      margin-top: 100px;
+      margin-bottom: 20px;
+    }
+  
+    h2 {
+      font-size: 20px;
+    }
+  
+    .model h3 {
+      font-size: 16px;
+    }
+  
+    .btn {
+      font-size: 12px;
+      padding: 5px 10px;
+    }
+  
+    footer {
+      font-size: 10px;
+    }
+
+    .test{
+      color: gray;
+      font-family: Georgia, 'Times New Roman', Times, serif;
+    }
+  
+    .highlightable {
+      margin-left: 3px;
+      margin-right: 3px;
+      margin-top: 10px;
+    }
+  
+    #models {
+      margin-top: 130px; /* Увеличен отступ для телефонов */
+    }
+  
+    #contact {
+      margin-bottom: 40px;
+    }
+  }
+  
+  /* Coded by Iwan Kochura */
